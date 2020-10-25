@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+
+	<package name="basicstruts2" extends="struts-default">
+
+		<default-action-ref name="home" />
+
+		<action name="test"
+			class="pgrdevelopers.strutscrud.actions.CreateUserAction">
+			<result name="success" type="redirectAction">home</result>
+			<result name="input">/addUser.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+
+		<action name="update"
+			class="pgrdevelopers.strutscrud.actions.UpdateUserAction">
+			<result name="success" type="redirectAction">home</result>
+			<result name="input">/updateData.jsp</result>
+			<result name="error" type="redirectAction">updateForm</result>
+		</action>
+
+		<action name="updateForm"
+			class="pgrdevelopers.strutscrud.actions.UpdateFormAction">
+			<result name="success">/updateData.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+
+		<action name="delete"
+			class="pgrdevelopers.strutscrud.actions.DeleteUserAction">
+			<result name="success" type="redirectAction">home</result>
+			<result name="error">/error.jsp</result>
+		</action>
+
+		<action name="home"
+			class="pgrdevelopers.strutscrud.actions.HomeAction">
+			<result name="success">/home.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+
+	</package>
+
+</struts>

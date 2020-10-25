@@ -1,0 +1,49 @@
+.header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	background-color: black;
+	width: 100%;
+	height: 30px;
+	color: white;
+	top: 0;
+	right: 0;
+	position: fixed;
+}
+
+.createUser {
+	display: flex;
+	margin-top: 75px;
+	justify-content: center;
+}
+
+.footer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	background-color: black;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: white;
+}
+
+.form {
+	margin: auto;
+}
+
+.button1 {
+	color: black;
+	width: 150px;
+	height: 35px;
+	border-radius: 8px;
+	margin-left: 10px;
+}
+
+.textfield {
+	margin: 10px;
+	width: 140px;
+	height: 30px;
+	border-radius: 5px;
+}
